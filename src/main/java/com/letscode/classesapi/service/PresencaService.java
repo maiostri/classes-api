@@ -24,6 +24,6 @@ public class PresencaService {
         return Mono.zip(
                 Mono.just(p).flatMap(presenca -> alunosGateway.getAluno(presenca.getAlunoId())),
                 Mono.just(p).flatMap(presenca -> turmaGateway.getTurma(presenca.getTurmaId()))
-        ).thenReturn(p);
+        ).map(t -> p);
     }
 }
