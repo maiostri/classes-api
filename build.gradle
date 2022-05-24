@@ -24,6 +24,7 @@ dependencies {
     }
 
     testImplementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'de.codecentric:spring-boot-admin-starter-client:2.6.7'
 
 }
 
