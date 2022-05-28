@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,7 @@ import java.io.IOException;
 @WebFluxTest
 @ExtendWith(SpringExtension.class)
 @Import({PresencaService.class, AlunosGateway.class, TurmaGateway.class})
+@Disabled
 public class PresencaServiceTests {
 
     public static MockWebServer mockWebServer;
