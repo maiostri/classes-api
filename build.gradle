@@ -23,8 +23,21 @@ dependencies {
         exclude group: 'com.squareup.okhttp3', module: 'okhttp'
     }
 
+//    #Disponibilizar endpoints com o path -> actuator.
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'io.micrometer:micrometer-registry-prometheus:1.9.0'
+
+
+    // Eureka client
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.2'
+
+    // Feign reativo
+    implementation 'com.playtika.reactivefeign:feign-reactor-core:3.2.1'
+    implementation 'com.playtika.reactivefeign:feign-reactor-spring-configuration:3.2.1'
+    implementation 'com.playtika.reactivefeign:feign-reactor-webclient:3.2.1'
+
+
     testImplementation 'com.squareup.okhttp3:okhttp:4.9.0'
-    implementation 'de.codecentric:spring-boot-admin-starter-client:2.6.7'
 
 }
 
